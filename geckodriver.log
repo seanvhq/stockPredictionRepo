@@ -7175,3 +7175,773 @@ console.error: BroadcastService:
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1563926506874	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.I4D7F75zrhZO"
+1563926507679	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563926507679	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563926507679	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563926507680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563926510494	Marionette	INFO	Listening on port 33805
+1563926510590	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563926573550	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5CjyWxgKE3hR"
+1563926574190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563926574190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563926574190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563926574191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563926576344	Marionette	INFO	Listening on port 39037
+1563926576422	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563926595047	Marionette	INFO	Stopped listening on port 39037
+1563926602104	Marionette	INFO	Stopped listening on port 33805
+[Parent 5298, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x600027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+1563927852813	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ygpoo2AR3Nk9"
+1563927853297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563927853297	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563927853298	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563927853298	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563927854963	Marionette	INFO	Listening on port 42065
+1563927855029	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/td-app-finance.3b1bc3600fb2eaa47f8c.modern.js, line 1: TypeError: a.push is not a function
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/td-app-finance.3b1bc3600fb2eaa47f8c.modern.js, line 1: TypeError: a.push is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+
+(/usr/lib/firefox/firefox:6550): dconf-WARNING **: 08:25:22.128: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563927939641	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CA20PV6CAG9T"
+1563927940307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563927940307	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563927940308	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563927940308	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563927942541	Marionette	INFO	Listening on port 39101
+1563927942582	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/292919/36802966/xbbe/creative/adj?p=APEucNVK7t8-wLPTRUnm5IBD4rqBXFlMUdXmL_3xf7PLSF8LkyvljwE&d=CkkAoCZ_4LsHfJofaEH9SdZb9NvyrcSfbiE4YtjrHz7rxchWslH8eUpC04Ebe3EB2jk52UXKOKM4D7N2F56X_eya8P3AKnny_M5mEokLAKAmf-Cpo2vX1JTCRKNm3__KmxOuC70Gffj5F-ZLFP6C3rimC1jFtCcmerpYw8NVT75Xj7POKrimAUKOzXvJRY3fIFQRyL2wSTZfYe7t1fbk_nV2IOz8s7SknbYbWJM9J6wH31ZkDgw716weY-hnjNhNbxbrdRvSWrtSln9_N07LM7LKx0cvSdKwsPcfJlowTS_pXY3CgRtj3mw-rRC4AQwBIfCiWZkutlFPo3HRlqGcqTKeAn3FTV6TPxrFB54B1qXf3o2574RXgH0ASUHdzFxaNR2FWXq8xJeeTijg6lgnXAfrYJMxVc5ORN-xrmXhsg5wn76Lngr10LaaFfWvU2vkpEctqY6qZcOZSRZHAMD1TkVUdcMHsdPxx-iLpuCHMtH-zy487Ik3MXTPXAOot3bKW6_tguq6M1AIRZvX7sdz_-BtjHem1ExtmFfFn0lHsX9E0muXbPoJAj12SoExUD7QgRs4GaSbYx0ubpKsIf4uBBWhN35H7F6dcj9MafayXHUdMzy6-ZbVACBMAOuhevV1GQJ451V9fiHeV-F--aZ1kIo21ekY7XYy_Xu7KmF65wLVIyyJ63sMgkgjPI9oMjRZT8YawCz4MFUAPvVn7G0lVkRz6e27hBw2W-scCrEHYu1IMjRPvi_vpTmRhKYsV2yYvltB4R5qAUQY2zhP3RKePbPwhUY9WMICEWDAVGMAzeOsCJbekH0w3P1sTEX203Vnexnn_p8mU2BMgqR3wYwIGx0AZ3ICyC6zxlaj5Db851PF53i59PsKoDoGT6-C47UKEvtkpHxXqsJAx2BRKYoX1KN-zavX_Hw2tEi1U1V0V57E7pY5hMrf8kZY8O--_sg0-UvY12GPIddXavwzYL_6kiwGwD-VOwdpV_2CE7hiEcGjkErRP0hALsXvlWH-j5RkMaa0s52IWPILYvY_qcG-6mewR_JLcajDmirHKGq902r0GF2JP7XAYxSAUDxe71uiT8_xkLHKBDbo8QOHgsPRcMS5naEMFBsrvDizsHCPXzjbeOGfZmhNUuKWpsZrLn8gb5uE0e7i-oqfNtERwuAOFvEkJK4LtX8_c4qZvkt0qlP_GZA7JSjjdC4llqIAUH7gF7S_bYoiLVTbzg0AK5yyLLSX4yjdu_XFd7y2H3ARU0WZmTqLpL---Lxd9VOjFRtTuZo57Vaye2rub138ypwG-KCq5dCNeE3ZxXOxDfEteyYkrxafZoaKfRa74jYcFU4AjUOE77AIac3MsHtGPBPhQc7X-nYN2G8BD6EXPlaTp8D9U5s2J2I5KuX_aAxW2RHXjOlrawRfB5kjviPzpCzMQYe8xnBObmgZAopU8JZOCWab-6DrO2gzLiT0uJk0D8svtjR2_2Jn_Su3chxXAIn_xACLOzk3yduatpthBPhKPYBlj8tmoTDKpBilKCQB4pOosbF7YjnmVWhTSiWpmyRK70aYLaKS3BiQ2iCMBpOIAMNIhQ0du_yjgm7ZGLlj0I6lZI2hWvLA0QFd9TQnVFrwztAQBLA3qfMc655K8VFdlizaUFZ2O6qPUVK_0KQDT2E9k9XyoEnfcMjfWBcqkRdx-he29YkaSrOSRp5t3zrym222bWqhu1-wPQH-FdS5w3b1o-1EHQQmXrhYa-QiOcV-aUY9C-6CkvmvFSpQCbW5DAB6SSCYYipr-32jWn0a-MkBdpqM0T5E2jVVJ604OfmRimjkyV91NGTHXwVuPRRUiinpejLBHWDDcqsom8JNOF5YbsnetGmEHN5o0ZuM59b67LxzMN5dfyEkvSYtU6XYUrPMVM3x8DLMAUShBsyXxUfGrRHT1I2aABS5fTcD8fVVnnZfEV_OoWxkhZDYMM5-n24XcPeIkzJZOQhY7RsfenxnUmsFITaDQBoWCAASEuRoUWY0BvYVVBi3iegX7D3H3mAB, line 873: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/292919/36802966/xbbe/creative/adj?p=APEucNVK7t8-wLPTRUnm5IBD4rqBXFlMUdXmL_3xf7PLSF8LkyvljwE&d=CkkAoCZ_4KjBhBZBetclesqpLg-O24P5l3VMJpi0KmZEFjH9sXGWQfDCwnYfiqS_RYSsHZE4cbSLjzopIvjHSuMeKuXzbv8XfGVkEokLAKAmf-BSnXd8XESUqBBcIsRwD5u9t_W7npAECirBir0m0mOTQzIELQJdFFHPP0bGPy76_PsL4rMq0nXmsQGUOTL0l1Dmg2-3Lgr7vlSXJ3oDfPIPT7crfI1U24PUV5tHZ1D4tO5yYtzqz5XlL4_PTdNrq55R_Frh1Y5kQaeNvImUuIRX_y0M6ZTiZst7ePKd6qcumT-xT65xKLAFVFGC5WbH_FAipBzv9WYunfCK-EGRmdnT6qZA1s5-zUHmYZU4Icm2LS5Nwc6UBYqoS_8PCfggtiTZqRO6HAJ9STFpk0_HwsJOWQ3rR7E5XtgUUZkAuxfzUWy8QFvMpAWAz6gtfO-ZfkXi3wzKTFfkZhMWuZJ2TUG0eMyY6nNy8RjHXXUuANmVfXcSafj3qoVrLAz-KCZWiulcDpebeRoejcHzgJmQl43ioViUwk8dsOq79TdpYdr-XGojEnO2wcxRaqJN6Tf5lhJRg2coRFySJ1cnALbGxdam3LQ9zR54E2yifguM4PSXdNwp3r5gsVzYxZd61CPbu3AgLhJc_kabesCDgWc_0COOfrV0PWbONEVDBvlqz4WUUeWcmfC_non62CUgvbo4FHYfBcE1S4-yxrkUs5ydn8vH9Tgac260iY-35x4Z3bhgccd9u71BFWes3FY53JuPalbVL_SkFstcszEUE9n8XOaNTGf7J2UK5hLBCV5Kur3yN-Tb6iiZV8kUN3uZHEnr052ndbVDICDHhrdy5PzHOGcxj9zA95QwnYbVkmIyr12zsti-luViP25VYJ9W_jiixvFvSZKeunqRWrryplCW_9hKUvv0UUtbdguQ4uRnt6-sU5mqeDPc37hNVfyuD17earWQMcL9fJsHPHOZnAypsEQbFtsN3DCqMI9UXgiA2gfaF8V9T4iFNusDfjOE9tCGbueK9ucD-N-O8jlgjO2z-aQQwnmlV7hqD43iuLesGvtaIIGpbim4p_aUEHNwNjfqiYoQp2c8DD2oemQxiIHrSEA3NKMZ_fpSCTwxmC9VPFUvYd4SWryorGIWowz_bH1ZFVZJpEu8m5-hrr0Cw2Hvgw94YXNa2zJ6NsdF-qapyQBQDjrWO7tSfmMgDK9Quoc8o4P0auQpJvZ4EAgJBTxjIWHBxtLXxDZfc79I0FcPiZqjvLLhwyVWa9jbk64xf-vXbvoanxHa_hnRXkerMmEzPxTRljDYthWKDCO5sBTu4Y1FXg2-iGmrWmJqaw346CM5RI8zyUlS-SBJDpqZly9mCOMARvXl7xJBt143RUEL74f9W3Hp-qEDjGeE8n0nG_DfAFh_uxhHhpRLgxacOX9t5JnHYxPCpcrvjn_T24YvY8RxClMxZDEwbsX_COWjfjVe0LKSSmpDaTTbnzrjKzXInZX2e1ONo6ZTWZXTBjcqQHsVQBIxerowJs4quaiIGnYbWm3P9Yajrt1HLCFpRVOVdKz5obBsBioOD-K4EVbeeokp-5i_9-8_nrbddx85J7s0QgfYpFVv7pvHuvogKGPvZL7_STbB-JDQ9eT_zR9_0XC8wWA_h-G1cXpZyWD6nXzXtvAkeQ4bbugsQbGy4IAjcT236W_2qJ1lTJcT1zUA_uCceJDYbMgKcFOpPbhmBdCSf0X7Z8rVyScpQyLlJ_AKJwSEupjqFPLrfUd4_E3Wl6nyk8S1-9kd9nGpy8rbSMbvpp1cXNiYNUbCRN2LlyPPmy32GBOjk3RsasBLDOd4nmAwx1eyTfnsxTRBiYsYf3gY4NHTOYqdt0v4kLMJpj-8AlK4jB_uEtQpCaLYa81-WeNuDcehH2XdLO_VlX3joCCH2k9biUonJJxftILJH3UXov3d1Ec00vf97sEfxisPSpK98ifiq51PwFZTrciQukNTDJBT6KL81BoWCAASEuRoWD84cETDD9vIT_4f7y0EaWAB, line 873: NS_ERROR_NOT_INITIALIZED: 
+1563927965868	Marionette	INFO	Stopped listening on port 39101
+1563927972113	Marionette	INFO	Stopped listening on port 42065
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x600027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+1563928088258	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WOMmkh8EkhoQ"
+1563928088727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563928088728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563928088728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563928088728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563928090375	Marionette	INFO	Listening on port 39185
+1563928090477	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: [object ProgressEvent]
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+1563928159385	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PK3Opg3ix5Qt"
+1563928160073	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563928160073	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563928160074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563928160074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563928162118	Marionette	INFO	Listening on port 40233
+1563928162210	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:7118): dconf-WARNING **: 08:30:30.356: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1563928236633	Marionette	INFO	Stopped listening on port 40233
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1A0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+1563928238762	Marionette	INFO	Stopped listening on port 39185
+1563928255104	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iHzoS7yOx05J"
+1563928255687	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563928255687	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563928255687	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563928255687	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563928258064	Marionette	INFO	Listening on port 38599
+1563928258127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+
+(/usr/lib/firefox/firefox:7692): dconf-WARNING **: 08:31:20.987: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563928351508	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qPU3N9tZugsK"
+1563928352655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563928352655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563928352655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563928352655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563928355163	Marionette	INFO	Listening on port 35553
+1563928355299	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563928379615	Marionette	INFO	Stopped listening on port 35553
+1563928383481	Marionette	INFO	Stopped listening on port 38599
+1563930087771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5bEunB9V6OxS"
+1563930088385	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563930088385	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563930088386	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563930088386	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563930090799	Marionette	INFO	Listening on port 41847
+1563930090820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript error: https://s0.2mdn.net/5524424/1562219234159/index.html, line 20: SyntaxError: unexpected token: 'target'
+1563930172619	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yeaXyhp5cYes"
+1563930173510	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563930173510	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563930173511	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563930173511	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563930176538	Marionette	INFO	Listening on port 39751
+1563930176673	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563930206259	Marionette	INFO	Stopped listening on port 39751
+1563930224424	Marionette	INFO	Stopped listening on port 41847
+[Parent 8837, Gecko_IOThread] WARNING: pipe error (139): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1563930862115	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.q6w0jwCoJ5Ci"
+1563930862707	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563930862707	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563930862708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563930862708	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563930865042	Marionette	INFO	Listening on port 37793
+1563930865134	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: [object Object]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientHandle::Msg_PClientHandleOpConstructor Route error: message sent to unknown actor ID
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+1563931009587	Marionette	INFO	Stopped listening on port 37793
+1563931937450	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AyY4kSKviSWT"
+1563931938178	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563931938179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563931938179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563931938179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563931940238	Marionette	INFO	Listening on port 37907
+1563931940282	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563932012823	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cspTDNTexegx"
+1563932013486	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563932013486	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563932013486	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563932013486	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563932015802	Marionette	INFO	Listening on port 33791
+1563932015814	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:10377): dconf-WARNING **: 09:33:48.506: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1563932049016	Marionette	INFO	Stopped listening on port 33791
+1563932056084	Marionette	INFO	Stopped listening on port 37907
+1563932813429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TfgE0NUdbq70"
+1563932813956	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563932813957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563932813957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563932813957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563932815859	Marionette	INFO	Listening on port 34255
+1563932815947	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563932875953	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XDTes8rGNGYq"
+1563932876792	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563932876793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563932876793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563932876793	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563932879366	Marionette	INFO	Listening on port 39249
+1563932879386	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563932897391	Marionette	INFO	Stopped listening on port 39249
+1563932904774	Marionette	INFO	Stopped listening on port 34255
+1563932947345	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BYDg7gpb0vUR"
+1563932947911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563932947911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563932947911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563932947912	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563932950021	Marionette	INFO	Listening on port 45437
+1563932950085	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: [object Object]
+
+(/usr/lib/firefox/firefox:11403): dconf-WARNING **: 09:49:47.321: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript error: , line 0: TypeError: ServiceWorker script at https://finance.yahoo.com/_service-worker.js for scope https://finance.yahoo.com/ encountered an error during installation.
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: [object ProgressEvent]
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: [object ProgressEvent]
+1563933769509	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SrFxRWbBYWgC"
+1563933769983	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563933769983	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563933769983	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563933769984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563933771628	Marionette	INFO	Listening on port 43999
+1563933771725	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: [object Object]
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+1563933863763	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VJXlE5b3lZoW"
+1563933864350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563933864351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563933864351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563933864351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563933866211	Marionette	INFO	Listening on port 42651
+1563933866283	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563933905969	Marionette	INFO	Stopped listening on port 42651
+1563933920160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SI1Wwp7MmhYg"
+1563933920882	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563933920882	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563933920882	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563933920882	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563933922647	Marionette	INFO	Listening on port 44563
+1563933922688	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563933947664	Marionette	INFO	Stopped listening on port 44563
+1563933952224	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Uu66poVFYIro"
+1563933952759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563933952759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563933952759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563933952759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563933954856	Marionette	INFO	Listening on port 34333
+1563933954949	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+1563934008077	Marionette	INFO	Stopped listening on port 34333
+[Parent 12932, Gecko_IOThread] WARNING: pipe error (146): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_Teardown Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1563934013880	Marionette	INFO	Stopped listening on port 43999
+1563934201261	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.J1iif3NhIGj3"
+1563934201831	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563934201831	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563934201832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563934201832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563934203568	Marionette	INFO	Listening on port 45507
+1563934203614	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:13570): dconf-WARNING **: 10:10:39.224: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+[Parent 13488, Gecko_IOThread] WARNING: pipe error (87): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 13488, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1563934294418	Marionette	INFO	Stopped listening on port 45507
+1563934442102	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.J4q5plOnU3QH"
+1563934442718	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563934442718	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563934442718	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563934442718	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563934444749	Marionette	INFO	Listening on port 36403
+1563934444824	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+
+(/usr/lib/firefox/firefox:13875): dconf-WARNING **: 10:14:29.822: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563934531029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fSfduTyxheDP"
+1563934531665	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563934531665	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563934531666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563934531666	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563934533645	Marionette	INFO	Listening on port 39647
+1563934533741	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/83912/26098560/xbbe/creative/adj?p=APEucNVi6FXVXV_RrHVzs4kj3RfEOt8ScrQhPG6L6ap7mOVbIoRoRZU&d=CkkAoCZ_4A-TKI2Lx3VEdq3bm1KhhJS1iGIy8qUYmo-8hIr2Rdjap3vdvxMwIdFPjiWQezw1ZxZ4oBG3j03XYWDpEx2tkquYjphcEpkLAKAmf-Dxpdu3A5KtF_C5Pmz4NVCUhssMaIPAcD8FYNfqytdsC2KfQGDY-vsikDvX0kE3O23KinThal8FTTyEQsGnsK6P985UNDcswpPbHY5eYTZgBaFA9gtfoP6b7h3YFWADQI7zQmhHbf9rFyhvWMrZ9E9nhl_Cj6BtqBHH1OPdk7PMZFwzh_95T5CTxSTMTxLbc44hDtQPwYkowriRJF-J86QCxMPRa80gIWGt7ZMFwDQ4cqhiUVCo-RjCGLaOe3zMnpxISwelFpercmI0l_smqhGsXsdXgwDpSrhU_9LUR-uwu5qIoItjmrq-lI2uvG-dC3MoWw3CojfIA98DH_zkVeeon8rOi3QXOlGjZxyi-Ygr13vX_ekMuHGfHoTRjKMJPfvMl98H03yO42Gp0ipd4r6rhFfEm90_sdSqxIhLtvQThWN7PlecNSO3eQ96kB33kbqHrdBNo8GmScEwitkreg46BiAaCdNjz1HZaIA1PKvHUhFLArRNJldSywNOfr79E-ZjmoACk_XXnysT_gKkQfqLW0j5GJV9Pfhfy0yu735MiiGk2WWgtleIE3OgR7xhp3IHQyKeSTLkvpuGQYu2dsuHUV9loRmX3Zr8lnNnY0SgayfO8ntWqESU6zY5cDlyU8svtMKYCWZu2Enr3JEj3OtX3WptLQil7wuUNaf_QSuOonEFFTmCAOjZMmFSpQnohFQqiOs8_y5LSrVlmFc8UZtKaLzm-toSd568lx4u4P16G0WRbSo5bjyPfA8Zmwlh01XGidJ6ZThzgESOu4L7LsteCxNri5JDXc_Jx59x7ls35FRR23ivT6BOa5efh77RAEd57OyHy16LH-KDlQxbIoMCiVDoPSxPM2BdMI9GpnDGppf4jbJYM_trTZiqT-6o-hrvkMPpHbVFjg2t8-c2eF6rwS1QR8BKrb8OHUgFDwZK4daqfCTW2fF32BZBzX9DJx_hTFto5w_QdxVbeai_cneLeXITbG_aOHEXmpdU87OzG8oS0eG7T7504VbA5Y8pdK9lwbReppP9j4Ir5SGGuQDF2CuHgMtra5HzcGfcXtvvvjyfs_12IjnbcdJ5FIKM-EqQgnmEe_5ihz7J85uQ9P3zsxdMOY9X5HRULf_v6av1CbwJigA3tPPbs7HWmuKCGdTr8Lvi_0_BpZIiJNTKVok8cJ-S8mV0ECeYCZ8ai5_-epp_XTakoMrH57FE2Xu483W0KmkGQRbSZVODMmlhuZ_SBsPAQS5g9WxMvbbNcKZViH2YLhXoXD4C8n1JCN728ZP6RdZObia96qJQ51tGrz1KjEXYZ_oeScteReh-Ab0lN5s16ieHjUJSILkGQXAVdxcyu1mNZ6kWKOVMGTO_EdEUVZlDsIKdZNucrqwPJhHO6u-mK3Cct-Iw6yTNwtu8DY3mWlMKjeKGCSCPtme9sxkpivVwvb2teDRJyXJhtQw1fDxTlJdbN_fOgfXwr1Mek1-QFRamqu4O4YZ7I1o-hzADJJtVWhbkE3wSLjcurvyCDqIyRSxpdp2cR-a_uQPvGZn4jiJbvAiy27p0fC2sX-CvCtwz4EJpEtcaRETYZFfTnSb50fOQwNn5YzOeM3tBDj0x8xunra1agWW2qEZ-i1x-hptn0tNXmsWpxOBrDeDnMC6Snletyrn9L6Y9Byd9gABli8IAVVTjegaHf1ZEXE2NU0t5m5qE7rUnhF3g_iZTc7Cwbjj5BX_uPTWRpcEC4k3OpRHsPsG-Er7o8ZDYWtHHYk3T0pPCyPUxxpjnrLt2qAI4ws-VTjbkNI5pDz52XX1dhONxhoysLPbiBGyeh7F8DfR1Rp2IRq4-6GJhQz_kbVBs8VKTHMV5276HmBm_6tPPst_vFlC3oUBNA12E56GpnSwIl1ki6XX1jaKGpzBeweJ4hWwaFggAEhLkaAjt77d2EyrNqVN2c6KqzfNgAQ, line 873: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563934586780	Marionette	INFO	Stopped listening on port 39647
+1563934590777	Marionette	INFO	Stopped listening on port 36403
+1563935314103	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EWCgKRhSVdRW"
+1563935314700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563935314700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563935314700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563935314700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563935316691	Marionette	INFO	Listening on port 35753
+1563935316718	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+1563935395010	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mppIZblT7O1h"
+1563935395660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563935395660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563935395661	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563935395661	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563935397415	Marionette	INFO	Listening on port 33219
+1563935397455	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:15101): dconf-WARNING **: 10:30:37.642: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1563935439751	Marionette	INFO	Stopped listening on port 33219
+[Parent 14682, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1563935484080	Marionette	INFO	Stopped listening on port 35753
+1563935686241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jL56gQN3j2I2"
+1563935686818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563935686818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563935686819	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563935686819	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563935689451	Marionette	INFO	Listening on port 42643
+1563935689489	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s0.2mdn.net/5524424/1562219234159/index.html, line 20: SyntaxError: unexpected token: 'target'
+1563935774062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xHofF5Gq7utR"
+1563935774925	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563935774925	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563935774926	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563935774926	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563935776652	Marionette	INFO	Listening on port 35191
+1563935776698	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: https://s0.2mdn.net/5524424/1562219234159/index.html, line 20: SyntaxError: unexpected token: 'target'
+1563935810086	Marionette	INFO	Stopped listening on port 35191
+1563935818852	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.657SeqXxBsLP"
+1563935819817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563935819817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563935819817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563935819817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563935821587	Marionette	INFO	Listening on port 37609
+1563935821671	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+1563935866088	Marionette	INFO	Stopped listening on port 37609
+JavaScript error: https://s.yimg.com/rx/builds/7.86.855.1563403404/vpaid-min.js, line 2: TypeError: r.parent is null
+1563935876188	Marionette	INFO	Stopped listening on port 42643
+[Parent 15325, Gecko_IOThread] WARNING: pipe error (96): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1563945239943	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PEBrBr7Uc6fq"
+1563945240534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563945240534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563945240535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563945240535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563945242325	Marionette	INFO	Listening on port 39353
+1563945242382	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+
+(/usr/lib/firefox/firefox:20048): dconf-WARNING **: 13:14:13.458: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/main.modern.750c3495cdae1c753256.modern.js, line 48: Error: XMLHttpRequest timeout
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563945338676	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wIKps0gZCvlR"
+1563945339193	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563945339193	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563945339194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563945339194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563945340950	Marionette	INFO	Listening on port 43339
+1563945340996	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/91709/23148686/dcm/dcmads.js?adsafe_preview=%24%7BIS_PREVIEW%7D, line 873: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://static.adsafeprotected.com/main.17.4.191.js, line 117: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript error: https://static.adsafeprotected.com/main.17.4.191.js, line 293: TypeError: d is undefined
+JavaScript error: https://static.adsafeprotected.com/main.17.4.191.js, line 293: TypeError: d is undefined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+(/usr/lib/firefox/firefox:20328): dconf-WARNING **: 13:16:14.794: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1563945387316	Marionette	INFO	Stopped listening on port 43339
+1563945393911	Marionette	INFO	Stopped listening on port 39353
+1563945985806	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.QYPr0o4GiYRB"
+1563945986356	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563945986356	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563945986356	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563945986356	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563945988071	Marionette	INFO	Listening on port 38625
+1563945988135	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:20971): dconf-WARNING **: 13:26:51.713: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563946097053	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TE9cpuPb55Oq"
+1563946097547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563946097547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563946097547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563946097547	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563946099747	Marionette	INFO	Listening on port 40073
+1563946099790	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563946259575	Marionette	INFO	Stopped listening on port 40073
+[Parent 20887, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1563946261192	Marionette	INFO	Stopped listening on port 38625
+1563946301652	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yZboB2t7XH81"
+1563946302224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563946302224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563946302224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563946302224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563946304160	Marionette	INFO	Listening on port 41531
+1563946304200	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: uncaught exception: [object Object]
+
+(/usr/lib/firefox/firefox:21550): dconf-WARNING **: 13:32:14.205: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563946443470	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kH7IOofv4R2C"
+1563946444191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563946444191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563946444192	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563946444192	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563946446298	Marionette	INFO	Listening on port 45021
+1563946446386	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:21898): dconf-WARNING **: 13:34:28.771: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563946541056	Marionette	INFO	Stopped listening on port 45021
+1563946549306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5xIP7zMlooyR"
+1563946549829	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563946549830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563946549830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563946549830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563946552409	Marionette	INFO	Listening on port 44233
+1563946552503	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563946714860	Marionette	INFO	Stopped listening on port 44233
+1563946722037	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aCFHKZY0OxrR"
+1563946722534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563946722534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563946722535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563946722535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563946725013	Marionette	INFO	Listening on port 36863
+1563946725060	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+(/usr/lib/firefox/firefox:22422): dconf-WARNING **: 13:40:17.699: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563946832813	Marionette	INFO	Stopped listening on port 36863
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x53000D,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Closed channel: cannot send/recv
+
+1563946837416	Marionette	INFO	Stopped listening on port 41531
+[Parent 21467, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-oTXxYK/firefox-68.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1563947376513	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6HqnRJ6QMp8h"
+1563947377020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563947377020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563947377020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563947377020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563947378679	Marionette	INFO	Listening on port 40749
+1563947378737	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+
+(/usr/lib/firefox/firefox:23058): dconf-WARNING **: 13:49:47.719: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563947446926	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4AL34QgbhfgU"
+1563947447486	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563947447487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563947447487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563947447487	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563947449404	Marionette	INFO	Listening on port 37441
+1563947449470	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563947491577	Marionette	INFO	Stopped listening on port 37441
+1563947498527	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6dV5YsiScZm7"
+1563947499150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563947499150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563947499150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563947499151	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563947501254	Marionette	INFO	Listening on port 35247
+1563947501338	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563947552603	Marionette	INFO	Stopped listening on port 35247
+1563947561289	Marionette	INFO	Stopped listening on port 40749
+1563948144643	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FwM4pPxNJtCp"
+1563948145226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563948145226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563948145226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563948145226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563948146916	Marionette	INFO	Listening on port 45637
+1563948146971	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:23997): dconf-WARNING **: 14:02:36.330: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/283640/36233890/dcm/dcmads.js, line 1049: TypeError: d is undefined
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/283640/36233890/dcm/dcmads.js, line 1049: TypeError: d is undefined
+JavaScript error: , line 0: uncaught exception: [object Object]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563948259379	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AtCsQaJiSt9r"
+1563948259959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563948259959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563948259959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563948259959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563948261616	Marionette	INFO	Listening on port 42945
+1563948261709	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+(/usr/lib/firefox/firefox:24289): dconf-WARNING **: 14:04:50.257: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1563948298636	Marionette	INFO	Stopped listening on port 42945
+1563948307090	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Moa8OhsvzAeY"
+1563948307682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563948307683	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563948307683	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563948307683	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563948309969	Marionette	INFO	Listening on port 33309
+1563948310014	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221563926412647%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1563948333242	Marionette	INFO	Stopped listening on port 33309
+1563948340042	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AA2aMUakplqh"
+1563948340514	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1563948340514	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1563948340514	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1563948340514	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1563948342413	Marionette	INFO	Listening on port 37795
+1563948342463	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563948362987	Marionette	INFO	Stopped listening on port 37795
+1563948367276	Marionette	INFO	Stopped listening on port 45637

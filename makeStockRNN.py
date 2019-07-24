@@ -85,9 +85,9 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 	model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
 	tensorboard = TensorBoard(log_dir=f'logs/{date.today()}')
-	filepath = 'RNN_final-{epoch:02d}-{val_acc:.3f}'
+	filepath = f'{date.today()}-'+'RNN_final-{epoch:02d}-{val_acc:.3f}'
 	checkpoint = ModelCheckpoint\
     ('models/{}.model'.format(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max'))
 
 	history = model.fit\
-    (x_train, y_train, batch_size=64, epochs=10, validation_data=(x_test, y_test), callbacks=[tensorboard, checkpoint])
+    (x_train, y_train, batch_size=64, epochs=20, validation_data=(x_test, y_test), callbacks=[tensorboard, checkpoint])
