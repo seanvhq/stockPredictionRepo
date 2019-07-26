@@ -11,7 +11,9 @@ from sklearn import preprocessing
 from collections import deque
 from datetime import datetime as date
 
-def sort_stock_data(df):
+def sort_stock_data(df, target_length):
+	df = df[:-target_length]
+
 	time_stamps = sorted(df.index.values)
 	last_five_pct = time_stamps[-int(0.05*len(df.index))]
 
@@ -19,6 +21,7 @@ def sort_stock_data(df):
 	testing_data = df[(last_five_pct <= df.index)]
 
 	return training_data, testing_data
+	print(f'\n\nDone! (sort_stock_data)')
 
 def preprocess_stock_data(dataframe, seq_length):
 	buys = []
@@ -29,6 +32,7 @@ def preprocess_stock_data(dataframe, seq_length):
 	for col in df.columns:
 		if col != 'eval':
 			df[col] = df[col].pct_change()
+			df = df.replace([np.inf, -np.inf], np.nan)
 			df.dropna(inplace=True)
 			df[col] = preprocessing.scale(df[col].values)
     
@@ -59,10 +63,11 @@ def preprocess_stock_data(dataframe, seq_length):
 	for seq, eva in seq_data:
 		X.append(seq)
 		y.append(eva)
-        
+
+	print('\n\nDone! (preprocess_stock_data)')
 	return np.array(X), y
 
-def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, company_name):
+def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, company_name, EPOCHS):
 	model = Sequential()
 	model.add(LSTM(128, activation='relu', input_shape=(x_train.shape[1:]), return_sequences=True))
 	model.add(Dropout(0.2))
@@ -84,10 +89,13 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 	opt = tf.keras.optimizers.Adam(lr=0.001, decay=1e-6)
 	model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
-	tensorboard = TensorBoard(log_dir=f'logs/{date.today()}')
-	filepath = f'{date.today()}-'+'RNN_final-{epoch:02d}-{val_acc:.3f}'
+	tensorboard = TensorBoard(log_dir=f'logs/{company_name}_{date.today()}')
+	company_name_and_date = f'{company_name}_{date.today().year}-{date.today().month}-{date.today().day}_{date.today().hour}:{date.today().minute}:{date.today().second}_'
+	filepath = company_name_and_date+'RNN-Final-{epoch:02d}-{val_acc:.3f}'
 	checkpoint = ModelCheckpoint\
     ('models/{}.model'.format(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max'))
 
 	history = model.fit\
-    (x_train, y_train, batch_size=64, epochs=20, validation_data=(x_test, y_test), callbacks=[tensorboard, checkpoint])
+    (x_train, y_train, batch_size=64, epochs=EPOCHS, validation_data=(x_test, y_test), callbacks=[tensorboard, checkpoint])
+    
+	print('\n\nDone! (make_stock_rnn)')

@@ -19,14 +19,14 @@ def get_stock_stats(cur_ticker, target_length):
 	stock_data = wb.DataReader(cur_ticker, data_source='yahoo', start='1900-1-1')
 	indicators = sdf.retype(stock_data)
 	indicators['volume_delta']
-	indicators['boll_ub']
-	indicators['boll_lb']
+	indicators['boll']
 	indicators['macd']
 	indicators['open_2_sma']
 	stock_data['future'] = stock_data['close'].shift(-target_length)
 	stock_data['eval'] = list(map(evaluate_price, stock_data['future'], stock_data['close']))
 	del stock_data['future']
 
+	print(f'\n\nDone! (get_stock_stats({cur_ticker}, {target_length}))')
 	return stock_data
 
 def get_stock_visual(stock_data, company_name):

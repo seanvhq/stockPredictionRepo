@@ -48,7 +48,7 @@ def current_company_sentiment():
 
 	cur_ticker = tickers[val]
 	company_name = ticker_dict.get(cur_ticker)
-	print('\nYou chose:\n{0} : {1} ({2})\n'.format(str(val), cur_ticker, company_name))
+	print(f'\nYou chose:\n{val} : {cur_ticker} ({company_name})\n')
 	driver = webdriver.Firefox(executable_path='./geckodriver')
 	driver.get(site)
 
@@ -65,8 +65,8 @@ def current_company_sentiment():
 
 	for elem in link_elems:
 		if 'finance.yahoo' in elem.get_attribute('href'):
-			if (company_name.upper() in elem.text.upper()) or (cur_ticker.upper() in elem.text.upper()):
-				print('Article #{0} name: '.format(str(k)) + elem.text)
+			if ((company_name.upper() in elem.text.upper()) and (cur_ticker.upper() != 'UPS')) or (cur_ticker.upper() == 'UPS' and ((cur_ticker.upper() in elem.text) or (company_name.upper() in elem.text.upper()))):
+				print(f'Article #{k} name: ' + elem.text)
 				driver2 = webdriver.Firefox(executable_path='./geckodriver')
 				driver2.get(elem.get_attribute('href'))
 
@@ -75,7 +75,7 @@ def current_company_sentiment():
 				except:
 					pass
 
-				print('Yahoo Finance {0} article #{1} opened.'.format(company_name, k))
+				print(f'Yahoo Finance {company_name} article #{k} opened.')
 				article_text = driver2.find_elements_by_xpath('//article/div/p')
 				file = open('current_text.txt', 'w')
 
@@ -98,7 +98,7 @@ def current_company_sentiment():
 				else:
 					eval_int = None
 
-				print('{0} article #{1} sentiment: {2}.\n'.format(company_name, str(k), eval_dict.get(eval_int)))
+				print(f'{company_name} article #{k} sentiment: {eval_dict.get(eval_int)}.\n')
 				k += 1
 
 				file.close()
@@ -113,8 +113,7 @@ def current_company_sentiment():
 	else:
 		overall_eval_int = 0
 
-	print('Current {0} sentiment: {1}.'.format(company_name, eval_dict.get(overall_eval_int)))
+	print(f'Current {company_name} sentiment: {eval_dict.get(overall_eval_int)}.')
 
 	print(f'\n\nDone! (current_company_sentiment({val}))')
-
-	return cur_ticker, company_name, overall_eval_int
+	return val, cur_ticker, company_name, overall_eval_int
