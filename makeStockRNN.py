@@ -95,6 +95,6 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
     ('models/{}.model'.format(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max'))
 
 	history = model.fit\
-    (x_train, y_train, batch_size=64, epochs=EPOCHS, validation_data=(x_test, y_test), callbacks=[tensorboard, checkpoint])
+    (x_train, y_train, batch_size=64, epochs=EPOCHS, validation_data=(x_test,y_test), callbacks=[tensorboard, checkpoint])
     
 	print('\n\nDone! (make_stock_rnn)')

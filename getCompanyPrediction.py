@@ -4,7 +4,6 @@ import tensorflow as tf
 from collections import deque
 from sklearn import preprocessing
 from tensorflow.keras.models import load_model
-from datetime import datetime as date
 from getStockStats import get_stock_stats, get_stock_visual, evaluate_price
 
 def sort_data(df, target_length):
@@ -38,6 +37,11 @@ def preprocess_data(dataframe, seq_length):
 			X.append(np.array(prev_days))
 
 	return np.array(X)
+
+action_dict = {
+	0 : 'fall',
+	1 : 'rise'
+}
 
 cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ')
 company_name = input('Enter the name of your company (ex. Coca-Cola): ')

@@ -1,6 +1,5 @@
 import tensorflow as tf
 from tensorflow.keras.models import load_model
-from datetime import datetime as date
 from getStockStats import get_stock_stats, get_stock_visual, evaluate_price
 from makeStockRNN import preprocess_stock_data
 
