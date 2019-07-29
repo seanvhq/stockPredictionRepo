@@ -35,7 +35,7 @@ __Requires Python 3__
 1. Clone this repository.
 1. Go into the stockPredictionRepo folder.
    1. Ex: For Linux, simply run `cd stockPredictionRepo` right after cloning the repository in your terminal.
-1. Run `python *FILENAME*` using whichever python file with the name `*FILENAME*` you'd like to run. Here's a list of runnable files:
+1. Run `python FILENAME` using whichever python file with the name `FILENAME` you'd like to run. Here's a list of runnable files:
 
 | FILENAME | Description |
 | --- | --- |
@@ -56,8 +56,8 @@ Again, please __do not interpret any of this as any sort of financial advice__. 
 </br>
 </br>
 
-| Company | Accuracy as of July 29, 2019 |
-| ------- | ---------------------------- |
+| Company | Model Accuracy as of July 29, 2019 |
+| ------- | ---------------------------------- |
 | Apple | 73.67% |
 | Amazon | 75.00% |
 | Ford | 63.68% |
