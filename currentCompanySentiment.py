@@ -2,7 +2,6 @@ import time
 
 from textblob import TextBlob
 from selenium import webdriver
-from datetime import datetime as date
 
 def current_company_sentiment():
 	cur_eval = 0
