@@ -15,40 +15,9 @@ def current_company_sentiment():
 
 	k = 1
 	site = 'https://finance.yahoo.com'
-	tickers = ['AAPL', 'AMZN', 'F', 'FB', 'GOOGL', 'KO', 'MSFT', 'NFLX', 'NVDA','TSLA', 'UPS']
-
-	ticker_dict = {
-		'AAPL' : 'Apple',
-		'AMZN' : 'Amazon',
-		'F' : 'Ford',
-		'FB' : 'Facebook',
-		'GOOGL' : 'Google',
-		'KO' : 'Coca-Cola',
-		'MSFT' : 'Microsoft',
-		'NFLX' : 'Netflix',
-		'NVDA' : 'Nvidia',
-		'TSLA' : 'Tesla',
-		'UPS' : 'United Parcel Service',
-	}
-	
-	print(f"Today's date and time: {date.today()}\n")
-	print('COMPANIES')
-	print('0 : AAPL (Apple)')
-	print('1 : AMZN (Amazon)')
-	print('2 : F (Ford)')
-	print('3 : FB (Facebook)')
-	print('4 : GOOGL (Google)')
-	print('5 : KO (Coca-Cola)')
-	print('6 : MSFT (Microsoft)')
-	print('7 : NFLX (Netflix)')
-	print('8 : NVDA (Nvidia)')
-	print('9 : TSLA (Tesla)')
-	print('10 : UPS (United Parcel Service)\n')
-	val = int(float(input('Get the most recent sentiment on a specific company. Enter an integer: ')))
-
-	cur_ticker = tickers[val]
-	company_name = ticker_dict.get(cur_ticker)
-	print(f'\nYou chose:\n{val} : {cur_ticker} ({company_name})\n')
+	cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ')
+	company_name = input('Enter the name of your company (ex. Coca-Cola): ')
+	print(f'\nYou chose: {cur_ticker} ({company_name})\n')
 	driver = webdriver.Firefox(executable_path='./geckodriver')
 	driver.get(site)
 
@@ -65,7 +34,7 @@ def current_company_sentiment():
 
 	for elem in link_elems:
 		if 'finance.yahoo' in elem.get_attribute('href'):
-			if ((company_name.upper() in elem.text.upper()) and (cur_ticker.upper() != 'UPS')) or (cur_ticker.upper() == 'UPS' and ((cur_ticker.upper() in elem.text) or (company_name.upper() in elem.text.upper()))):
+			if company_name.upper() in elem.text.upper():
 				print(f'Article #{k} name: ' + elem.text)
 				driver2 = webdriver.Firefox(executable_path='./geckodriver')
 				driver2.get(elem.get_attribute('href'))
@@ -110,10 +79,15 @@ def current_company_sentiment():
 		    
 	if cur_eval > 0:
 		overall_eval_int = 1
-	else:
+	elif cur_eval < 0:
 		overall_eval_int = 0
+	else:
+		overall_eval_int = None
 
 	print(f'Current {company_name} sentiment: {eval_dict.get(overall_eval_int)}.')
 
+	if overall_eval_int == None:
+		overall_eval_int = 0
+
 	print(f'\n\nDone! (current_company_sentiment({val}))')
-	return val, cur_ticker, company_name, overall_eval_int
+	return cur_ticker, company_name, overall_eval_int

@@ -28,6 +28,8 @@ def preprocess_stock_data(dataframe, seq_length):
 	df = pd.DataFrame(dataframe)
 	sells = []
 	seq_data = []
+	X = []
+	y = []
 
 	for col in df.columns:
 		if col != 'eval':
@@ -56,9 +58,6 @@ def preprocess_stock_data(dataframe, seq_length):
     
 	seq_data = sells + buys
 	random.shuffle(seq_data)
-    
-	X = []
-	y = []
     
 	for seq, eva in seq_data:
 		X.append(seq)
@@ -90,8 +89,8 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 	model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
 	tensorboard = TensorBoard(log_dir=f'logs/{company_name}_{date.today()}')
-	company_name_and_date = f'{company_name}_{date.today().year}-{date.today().month}-{date.today().day}_{date.today().hour}:{date.today().minute}:{date.today().second}_'
-	filepath = company_name_and_date+'RNN-Final-{epoch:02d}-{val_acc:.3f}'
+	company_name_and_date = f'{company_name}_Date-{date.today().year}-{date.today().month}-{date.today().day}_Time-{date.today().hour}:{date.today().minute}:{date.today().second}_'
+	filepath = company_name_and_date+'Epoch-{epoch:02d}_ValAcc-{val_acc:.3f}'
 	checkpoint = ModelCheckpoint\
     ('models/{}.model'.format(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max'))
 
