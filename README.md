@@ -36,20 +36,20 @@ __Requires Python 3__
 
 Models generated using this repo are of a specific form: each prediction uses the last 60 days of information as reference data to predict whether the price will rise or fall in 30 days.
 
-*Again*, please __do not interpret any of this as any sort of financial advice__. Use at your own discretion.
+Again, please __do not interpret any of this as any sort of financial advice__. Use at your own discretion.
 
 
 ###### Model accuracies as of July 29, 2019:
-AAPL (Apple): *73.67%*
-AMZN (Amazon): *75.00%*
-F (Ford): *63.68%*
-GOOGL (Google): *65.62%*
-KO (Coca-Cola): *59.11%*
-MSFT (Microsoft): *60.76%*
-NVDA (Nvidia): *68.24%*
-SBUX (Starbucks): *91.46%*
-TSLA (Tesla): *90.62%*
-UPS (United Parcel Services): *67.72%*
+AAPL (Apple): 73.67%
+AMZN (Amazon): 75.00%
+F (Ford): 63.68%
+GOOGL (Google): 65.62%
+KO (Coca-Cola): 59.11%
+MSFT (Microsoft): 60.76%
+NVDA (Nvidia): 68.24%
+SBUX (Starbucks): 91.46%
+TSLA (Tesla): 90.62%
+UPS (UPS): 67.72%
 
 
 ### Have fun!
