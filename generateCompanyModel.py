@@ -1,3 +1,4 @@
+from datetime import datetime as date
 from getStockStats import get_stock_stats, evaluate_price, get_stock_visual
 from makeStockRNN import sort_stock_data, preprocess_stock_data, make_stock_rnn
 	
