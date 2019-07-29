@@ -1,11 +1,18 @@
 # stockPredictionRepo
 Just exploring what I can do with RNN's and other modules people have provided.
 
+
+
+
 ## DISCLAIMER
 Nothing in this repository is meant to give you any sort of financial advice. This was done purely for experimental and exploratory purposes while at an internship.
 
+
 __Requires Python 3__
 * Tested with and written in Python 3.7.3.
+
+
+
 
 ## Required modules:
 * tensorflow
@@ -22,6 +29,9 @@ __Requires Python 3__
 * random
 * time
 
+
+
+
 ## How to use:
 1. Install requirements.
 1. Clone this repository.
@@ -37,9 +47,14 @@ __Requires Python 3__
 | `writeSentimentToCSV.py` | Web-scrapes the current sentiment of a company and saves it in a unique CSV file. |
 
 
+
+
 Models generated using this repo are of a specific form: each prediction uses the last 60 days of information as reference data to predict whether the price will rise or fall in 30 days.
 
+
 Again, please __do not interpret any of this as any sort of financial advice__. Use at your own discretion.
+
+
 
 
 | Company | Accuracy as of July 29, 2019 |
@@ -54,6 +69,8 @@ Again, please __do not interpret any of this as any sort of financial advice__. 
 | Starbucks | 91.46% |
 | Tesla | 90.62% |
 | UPS | 67.72% |
+
+
 
 
 ### Have fun!
