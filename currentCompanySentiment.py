@@ -14,9 +14,7 @@ def current_company_sentiment():
 
 	k = 1
 	site = 'https://finance.yahoo.com'
-	cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
 	company_name = input('Enter the name of your company (ex. Coca-Cola): ')
-	print(f'\nYou chose: {cur_ticker} ({company_name})\n')
 
 	driver = webdriver.Firefox(executable_path='./geckodriver')
 	driver.get(site)
@@ -34,7 +32,7 @@ def current_company_sentiment():
 
 	for elem in link_elems:
 		if 'finance.yahoo' in elem.get_attribute('href'):
-			if company_name.upper() in elem.text.upper():
+			if company_name in elem.text:
 				print(f'Article #{k} name: ' + elem.text)
 				driver2 = webdriver.Firefox(executable_path='./geckodriver')
 				driver2.get(elem.get_attribute('href'))
@@ -90,4 +88,4 @@ def current_company_sentiment():
 		overall_eval_int = 0
 
 	print(f'\n\nDone! (current_company_sentiment)')
-	return cur_ticker, company_name, overall_eval_int
+	return company_name, overall_eval_int
