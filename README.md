@@ -1,18 +1,16 @@
 # stockPredictionRepo
 Just exploring what I can do with RNN's and other modules people have provided.</br>
-</br>
 
 | DISCLAIMER |
 | ---------- |
 | Nothing in this repository is meant to give you any sort of financial advice.
 This was done purely for experimental and exploratory purposes while at an internship. |
 
-### Requires Python 3
-Tested with and written in Python 3.7.3.</br>
-</br>
-The `current_text.txt` file, although empty, is needed by the `currentCompanySentiment.py` module. Do not delete it.
+The `current_text.txt` file, although empty, is needed by the `currentCompanySentiment.py` module. Do not delete it.</br>
 
-## Required Modules:
+## Requirements:
+* python 3
+   * tested with and written in Python 3.7.3
 * tensorflow
   * pre 2.0.0
 * numpy
@@ -68,7 +66,7 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 
 Again, please __do not interpret any of this as any sort of financial advice__. Use at your own discretion.</br>
 
-#### Side-note:
+#### Side Note:
 I originally wanted to incorporate the sentiment analysis stuff into the RNN's, but I couldn't find any databases with enough data on companies' daily sentiments. Maybe if i left a computer on for 10 years getting daily sentiments, then I'd be able to use them. Oh well...</br>
 </br>
 
