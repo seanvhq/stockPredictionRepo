@@ -89,7 +89,7 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 
 	tensorboard = TensorBoard(log_dir=f'logs/{company_name}_{date.today()}')
 	checkpoint = ModelCheckpoint\
-    (f'models/LSTM_{company_name}.model', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+    (f'./models/LSTM_{company_name}.model', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 
 	history = model.fit\
     (x_train, y_train, batch_size=64, epochs=EPOCHS, validation_data=(x_test,y_test), callbacks=[tensorboard, checkpoint])

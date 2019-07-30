@@ -6,8 +6,8 @@ from makeStockRNN import sort_stock_data, preprocess_stock_data, make_stock_rnn
 print(f"Today's date and time:\
  {date.today().year}-{date.today().month}-{date.today().day}_{date.today().hour}:{date.today().minute}:{date.today().second}\n")
 
-cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
 company_name = input('Enter the name of your company (ex. Coca-Cola): ')
+cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
 print(f'\nYou chose: {cur_ticker} ({company_name})\n')
 
 print('\nEach prediction uses the last <seq_length> days of information as reference data\
@@ -32,7 +32,7 @@ print('')
 
 make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, company_name, EPOCHS)
 
-file = open('company_lengths.csv', 'a')
+file = open('./company_lengths.csv', 'a')
 writer = csv.writer(file)
 writer.writerow([company_name,seq_length,target_length])
 file.close()

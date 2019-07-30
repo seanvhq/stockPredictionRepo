@@ -47,7 +47,7 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 | `generateCompanyModel.py` | Generates a model for your chosen company. Saves the version of the model with the highest `val_acc` to the `models` folder. |
 | `getCompanyPrediction.py` | Uses a company's model from the `models` folder to try and predict whether the price of a particular company's stock will rise or fall `seq_length` days from execution. Make sure that the `COMPANYNAME` you entered matches one of the models in the `models` folder (Ex. `LSTM_COMPANYNAME.model`). |
 | `testCompanyModel.py` | Uses a company's model from the `models` folder to validate a particular company's most recent 5% of stock data. Make sure that the `COMPANYNAME` you entered matches one of the models in the `models` folder (Ex. `LSTM_COMPANYNAME.model`). |
-| `writeSentimentToCSV.py` | Web-scrapes the current sentiment of a company and saves it in a unique CSV file (0=Bad, 1=Good). |
+| `writeSentimentsToCSV.py` | Web-scrapes the current sentiment of your chosen company/companies and saves it in a unique CSV file (0=Bad, 1=Good). |
 </br>
 </br>
 
@@ -71,4 +71,4 @@ Again, please __do not interpret any of this as any sort of financial advice__. 
 I originally wanted to incorporate the sentiment analysis stuff into the RNN's, but I couldn't find any databases with enough data on companies' daily sentiments. Maybe if i left a computer on for 10 years getting daily sentiments, then I'd be able to use them. Oh well...</br>
 </br>
 
-### Have fun!
+# Have fun!

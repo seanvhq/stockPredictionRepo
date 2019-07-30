@@ -15,16 +15,15 @@ def sort_data(df, target_length):
 	print(f'\n\nDone! (sort_stock_data)')
 	return testing_data
 
-cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
 company_name = input('Enter the name of your company (ex. Coca-Cola): ')
+cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
 print(f'\nYou chose: {cur_ticker} ({company_name})\n')
 
-file = open('company_lengths.csv', 'r')
+file = open('./company_lengths.csv', 'r')
 reader = csv.reader(file)
 
 for row in reader:
-	if company_name.upper() == row[0].upper():
-		company_name = row[0]
+	if company_name == row[0]:
 		seq_length = int(row[1])
 		target_length = int(row[2])
 		break
@@ -41,6 +40,6 @@ get_stock_visual(stock_data, company_name)
 testing_data = sort_data(stock_data, target_length)
 x_test, y_test = preprocess_stock_data(testing_data, seq_length)
 
-model = load_model(f'models/LSTM_{company_name}.model')
+model = load_model(f'./models/LSTM_{company_name}.model')
 print('\nProcessing...')
 model.evaluate(x_test, y_test)

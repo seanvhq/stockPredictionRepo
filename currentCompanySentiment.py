@@ -1,9 +1,8 @@
 import time
-
 from textblob import TextBlob
 from selenium import webdriver
 
-def current_company_sentiment():
+def current_company_sentiment(company_name):
 	cur_eval = 0
 
 	eval_dict = {
@@ -14,8 +13,7 @@ def current_company_sentiment():
 
 	k = 1
 	site = 'https://finance.yahoo.com'
-	company_name = input('Enter the name of your company (ex. Coca-Cola): ')
-
+	print(f'\nCurrent company: {company_name}')
 	driver = webdriver.Firefox(executable_path='./geckodriver')
 	driver.get(site)
 
@@ -44,7 +42,7 @@ def current_company_sentiment():
 
 				print(f'Yahoo Finance {company_name} article #{k} opened.')
 				article_text = driver2.find_elements_by_xpath('//article/div/p')
-				file = open('current_text.txt', 'w')
+				file = open('./current_text.txt', 'w')
 
 				for p in article_text:
 					if p.get_attribute('content')[:7] == '<a href':
@@ -52,7 +50,7 @@ def current_company_sentiment():
 					file.write(p.text+' ')
 
 				file.close()
-				file = open('current_text.txt', 'r')
+				file = open('./current_text.txt', 'r')
 
 				polarity = TextBlob(file.read()).sentiment.polarity
 
@@ -72,7 +70,7 @@ def current_company_sentiment():
 				driver2.close()
 
 	driver.close()
-	file = open('current_text.txt', 'w')
+	file = open('./current_text.txt', 'w')
 	file.close()
 		    
 	if cur_eval > 0:
@@ -87,5 +85,5 @@ def current_company_sentiment():
 	if overall_eval_int == None:
 		overall_eval_int = 0
 
-	print(f'\n\nDone! (current_company_sentiment)')
-	return company_name, overall_eval_int
+	print(f'\n\nDone! (current_company_sentiment({company_name}))')
+	return overall_eval_int
