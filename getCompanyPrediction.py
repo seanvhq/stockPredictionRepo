@@ -75,4 +75,4 @@ model = load_model(f'models/LSTM_{company_name}.model')
 print('\nProcessing...')
 predictions = model.predict([x])
 print(f'\n\nGiven the last {seq_length} days of data, chances are that, in {target_length} days,\
-the stock price will {action_dict.get(np.argmax(predictions[-1]))}.\n')
+ the stock price will {action_dict.get(np.argmax(predictions[-1]))}.\n')
