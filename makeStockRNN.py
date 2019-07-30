@@ -19,8 +19,8 @@ def sort_stock_data(df, target_length):
 	training_data = df[(df.index < last_five_pct)]
 	testing_data = df[(last_five_pct <= df.index)]
 
-	return training_data, testing_data
 	print(f'\n\nDone! (sort_stock_data)')
+	return training_data, testing_data
 
 def preprocess_stock_data(dataframe, seq_length):
 	buys = []
@@ -88,10 +88,8 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 	model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
 	tensorboard = TensorBoard(log_dir=f'logs/{company_name}_{date.today()}')
-	company_name_and_date = f'{company_name}_Date-{date.today().year}-{date.today().month}-{date.today().day}_Time-{date.today().hour}:{date.today().minute}:{date.today().second}_'
-	filepath = company_name_and_date+'Epoch-{epoch:02d}_ValAcc-{val_acc:.3f}'
 	checkpoint = ModelCheckpoint\
-    ('models/{}.model'.format(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max'))
+    (f'models/LSTM_{company_name}.model', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 
 	history = model.fit\
     (x_train, y_train, batch_size=64, epochs=EPOCHS, validation_data=(x_test,y_test), callbacks=[tensorboard, checkpoint])

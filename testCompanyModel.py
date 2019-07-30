@@ -1,3 +1,4 @@
+import csv
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from getStockStats import get_stock_stats, get_stock_visual, evaluate_price
@@ -11,22 +12,35 @@ def sort_data(df, target_length):
 
 	testing_data = df[(last_five_pct <= df.index)]
 
-	return testing_data
 	print(f'\n\nDone! (sort_stock_data)')
+	return testing_data
 
-cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ')
+cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
 company_name = input('Enter the name of your company (ex. Coca-Cola): ')
 print(f'\nYou chose: {cur_ticker} ({company_name})\n')
 
-seq_length = 60
-target_length = 30
+file = open('company_lengths.csv', 'r')
+reader = csv.reader(file)
+
+for row in reader:
+	if company_name.upper() == row[0].upper():
+		company_name = row[0]
+		seq_length = int(row[1])
+		target_length = int(row[2])
+		break
+		
+file.close()
+
+print(f'\nCompany: {company_name}')
+print(f'seq_length = {seq_length}')
+print(f'target_length = {target_length}\n')
 
 stock_data = get_stock_stats(cur_ticker, target_length)
 get_stock_visual(stock_data, company_name)
 
 testing_data = sort_data(stock_data, target_length)
-
 x_test, y_test = preprocess_stock_data(testing_data, seq_length)
 
-model = load_model(f'best_models/RNN_{company_name}.model')
+model = load_model(f'models/LSTM_{company_name}.model')
+print('\nProcessing...')
 model.evaluate(x_test, y_test)

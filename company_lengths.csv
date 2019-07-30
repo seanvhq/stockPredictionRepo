@@ -1,0 +1,10 @@
+COMPANY NAME,seq_length,target_length
+Amazon,60,30
+Apple,60,30
+Coca-Cola,60,30
+Ford,60,30
+Google,60,30
+Microsoft,60,30
+Nvidia,60,30
+Starbucks,60,30
+Tesla,60,30
