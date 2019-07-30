@@ -27,10 +27,10 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 * csv
 * os
 
-### Models generated using this repository are of a specific form:
-* When first creating a model for a company using `generateCompanyModel.py`, you are asked to provide the company's name, `seq_length`, and `target_length`. These are then appended to the `company_lengths.csv` file located in the repository.
+### Important Notes:
+* When first creating a model for a company using `generateCompanyModel.py`, you are asked to provide the company's name, `seq_length`, and `target_length`. These are appended to the `company_lengths.csv` file located in the repository after the model has been finished.
 * Each prediction uses the last `seq_length` days of information as reference data to predict whether the price will rise or fall in `target_length` days.
-* When running either `getCompanyPrediction.py` or `testCompanyModel.py`, the `seq_length` and `target_length` variables are taken from the `company_lengths.csv` file.
+* When running either `getCompanyPrediction.py` or `testCompanyModel.py`, the `seq_length` and `target_length` variables are taken from the row of the corresponding company in the `company_lengths.csv` file.
 * All of the models in the repository, as of July 29, 2019, have `seq_length=60` and `target_length=30` (these lengths yield the highest accuracies for whatever reason).
 
 ## How To Use:
@@ -44,8 +44,8 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 | FILENAME | Description |
 | -------- | ----------- |
 | `generateCompanyModel.py` | Generates a model for your chosen company. Saves the version of the model with the highest `val_acc` to the `models` folder. |
-| `getCompanyPrediction.py` | Tries to predict whether the price of a particular company's stock will rise or fall in the next `seq_length` days. |
-| `testCompanyModel.py` | Uses a model from the `models` folder to validate a particular company's most recent 5% of stock data. Just make sure that the `COMPANYNAME` you entered matches one of the models in the `models` folder (Ex. `LSTM_COMPANYNAME.model`). |
+| `getCompanyPrediction.py` | Uses a company's model from the `models` folder to try and predict whether the price of a particular company's stock will rise or fall `seq_length` days from execution. Make sure that the `COMPANYNAME` you entered matches one of the models in the `models` folder (Ex. `LSTM_COMPANYNAME.model`). |
+| `testCompanyModel.py` | Uses a company's model from the `models` folder to validate a particular company's most recent 5% of stock data. Make sure that the `COMPANYNAME` you entered matches one of the models in the `models` folder (Ex. `LSTM_COMPANYNAME.model`). |
 | `writeSentimentToCSV.py` | Web-scrapes the current sentiment of a company and saves it in a unique CSV file (0=Bad, 1=Good). |
 </br>
 </br>
