@@ -9,7 +9,7 @@ This was done purely for experimental and exploratory purposes while at an inter
 The `current_text.txt` file, although empty, is needed by the `currentCompanySentiment.py` module. Do not delete it.</br>
 
 ## Requirements:
-* consistend internet access
+* consistent internet access
 * python 3
    * tested with and written in Python 3.7.3
 * tensorflow
