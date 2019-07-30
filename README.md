@@ -1,18 +1,16 @@
 # stockPredictionRepo
-Just exploring what I can do with RNN's and other modules people have provided.
-</br>
-</br>
+Just exploring what I can do with RNN's and other modules people have provided.</br>
 </br>
 
-## DISCLAIMER
+### DISCLAIMER
 Nothing in this repository is meant to give you any sort of financial advice.</br>
-This was done purely for experimental and exploratory purposes while at an internship.
-</br>
+This was done purely for experimental and exploratory purposes while at an internship.</br>
 </br>
 
-__Requires Python 3__
+### Requires Python 3
 Tested with and written in Python 3.7.3.</br>
-The `current_text.txt` file, although empty, is needed by the `currentCompanySentiment.py` module. Please do not delete it.</br>
+</br>
+The `current_text.txt` file, although empty, is needed by the `currentCompanySentiment.py` module. Do not delete it.
 
 ## Required Modules:
 * tensorflow
@@ -30,16 +28,12 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 * time
 * csv
 * os
-</br>
-</br>
 
-#### Models generated using this repository are of a specific form:
+### Models generated using this repository are of a specific form:
 * When first creating a model for a company using `generateCompanyModel.py`, you are asked to provide the company's name, `seq_length`, and `target_length`. These are then appended to the `company_lengths.csv` file located in the repository.
 * Each prediction uses the last `seq_length` days of information as reference data to predict whether the price will rise or fall in `target_length` days.
 * When running either `getCompanyPrediction.py` or `testCompanyModel.py`, the `seq_length` and `target_length` variables are taken from the `company_lengths.csv` file.
 * All of the models in the repository, as of July 29, 2019, have `seq_length=60` and `target_length=30` (these lengths yield the highest accuracies for whatever reason).
-</br>
-</br>
 
 ## How To Use:
 1. Install requirements.
@@ -47,7 +41,6 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 1. Go into the stockPredictionRepo folder.
    1. Ex: For Linux, while still in your terminal, simply run `cd stockPredictionRepo` right after cloning the repository.
 1. Run `python FILENAME` using whichever python file with the name `FILENAME` you'd like to run. The table below represents all runnable python files.
-</br>
 </br>
 
 | FILENAME | Description |
@@ -72,11 +65,10 @@ The `current_text.txt` file, although empty, is needed by the `currentCompanySen
 | Tesla | 90.62% |
 | UPS | 67.72% |
 </br>
-</br>
 
 Again, please __do not interpret any of this as any sort of financial advice__. Use at your own discretion.</br>
 
-###### Side-note
+#### Side-note:
 I originally wanted to incorporate the sentiment analysis stuff into the RNN's, but I couldn't find any databases with enough data on companies' daily sentiments. Maybe if i left a computer on for 10 years getting daily sentiments, then I'd be able to use them. Oh well...</br>
 </br>
 
