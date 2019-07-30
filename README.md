@@ -2,10 +2,10 @@
 Just exploring what I can do with RNN's and other modules people have provided.</br>
 </br>
 
-### DISCLAIMER
-Nothing in this repository is meant to give you any sort of financial advice.</br>
-This was done purely for experimental and exploratory purposes while at an internship.</br>
-</br>
+| DISCLAIMER |
+| ---------- |
+| Nothing in this repository is meant to give you any sort of financial advice.
+This was done purely for experimental and exploratory purposes while at an internship. |
 
 ### Requires Python 3
 Tested with and written in Python 3.7.3.</br>
