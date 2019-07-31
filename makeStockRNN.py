@@ -65,7 +65,7 @@ def preprocess_stock_data(dataframe, seq_length):
 	print('\n\nDone! (preprocess_stock_data)')
 	return np.array(X), y
 
-def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, company_name, EPOCHS):
+def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, cur_ticker, EPOCHS):
 	model = Sequential()
 	model.add(LSTM(128, activation='relu', input_shape=(x_train.shape[1:]), return_sequences=True))
 	model.add(Dropout(0.2))
@@ -87,11 +87,11 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 	opt = tf.keras.optimizers.Adam(lr=0.001, decay=1e-6)
 	model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
-	tensorboard = TensorBoard(log_dir=f'logs/{company_name}_{date.today()}')
+	tensorboard = TensorBoard(log_dir=f'logs/{cur_ticker}_{date.today()}')
 	checkpoint = ModelCheckpoint\
-    (f'./models/LSTM_{company_name}.model', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+    (f'./models/LSTM_{cur_ticker}.model', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 
-	history = model.fit\
+	model.fit\
     (x_train, y_train, batch_size=64, epochs=EPOCHS, validation_data=(x_test,y_test), callbacks=[tensorboard, checkpoint])
     
 	print('\n\nDone! (make_stock_rnn)')

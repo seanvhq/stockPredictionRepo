@@ -15,41 +15,50 @@ def evaluate_price(f, c):
     else:
         return 0
 
-def get_stock_stats(cur_ticker, target_length):
-	stock_data = wb.DataReader(cur_ticker, data_source='yahoo', start='1900-1-1')
+def get_stock_stats(cur_ticker, target_length, indicator_arr):
+	print('')
+	inds_to_remove = []
+	is_stocks = False
+	while is_stocks == False:
+		try:
+			stock_data = wb.DataReader(cur_ticker, data_source='yahoo', start='1900-1-1')
+			is_stocks = True
+		except:
+			cur_ticker = input('Invalid NASDAQ/NYSE ticker. Try inputting the ticker again: ').upper()
+
 	indicators = sdf.retype(stock_data)
-	indicators['volume_delta']
-	indicators['boll']
-	indicators['macd']
-	indicators['open_2_sma']
+
+	for cur_ind in indicator_arr:
+		try:
+			indicators[cur_ind]
+		except:
+			inds_to_remove.append(cur_ind)
+
+	print('')
+
+	for remove_ind in inds_to_remove:
+		print(f'Invalid indicator removed: {remove_ind}')
+		indicator_arr.remove(remove_ind)
+
 	stock_data['future'] = stock_data['close'].shift(-target_length)
 	stock_data['eval'] = list(map(evaluate_price, stock_data['future'], stock_data['close']))
 	del stock_data['future']
 
-	print(f'\n\nDone! (get_stock_stats({cur_ticker}, {target_length}))')
-	return stock_data
+	print(f'\n\nDone! (get_stock_stats({cur_ticker}, {target_length}, {indicator_arr}))')
+	return stock_data, cur_ticker, indicator_arr
 
-def get_stock_visual(stock_data, company_name):
+def get_stock_visual(stock_data, company_name, indicator_arr):
 	rcParams['figure.figsize'] = 15, 7
-	plt.plot(stock_data['close'], label='Close Price')
-	plt.plot(stock_data['boll_ub'], label='BB Upper Band')
-	plt.plot(stock_data['boll_lb'], label='BB Lower Band')
-	plt.plot(stock_data['close_26_ema'], label='26-Day EMA (Close Price)')
+	plt.plot(stock_data['open'], label='Open')
+	plt.plot(stock_data['close'], label='Close')
 	plt.title(company_name+' Stock Data')
 	plt.legend()
 	plt.show()
-
-	rcParams['figure.figsize'] = 15, 7
-	plt.plot(stock_data['macd'], label='MACD')
-	plt.plot(stock_data['macds'], label='MACD Signal Line')
-	plt.plot(stock_data['macdh'], label='MACD Histogram')
-	plt.title(company_name+' MACD Data')
-	plt.legend()
-	plt.show()
-
-	rcParams['figure.figsize'] = 15, 7
-	plt.plot(stock_data['volume_delta'], label='Volume Delta Against Previous Day')
-	plt.title(company_name+' Volume Delta')
-	plt.show()
+	
+	for cur_ind in indicator_arr:
+		rcParams['figure.figsize'] = 15, 7
+		plt.plot(stock_data[cur_ind])
+		plt.title(company_name+' '+cur_ind)
+		plt.show()
 
 	print('\n\nDone! (get_stock_visual)')

@@ -15,31 +15,33 @@ def sort_data(df, target_length):
 	print(f'\n\nDone! (sort_stock_data)')
 	return testing_data
 
-company_name = input('Enter the name of your company (ex. Coca-Cola): ')
-cur_ticker = input('Enter the NASDAQ ticker of your company (ex. KO): ').upper()
-print(f'\nYou chose: {cur_ticker} ({company_name})\n')
+cur_ticker = input('Enter the NASDAQ/NYSE ticker of your company (ex. for Coca-Cola: KO): ').upper()
 
-file = open('./company_lengths.csv', 'r')
-reader = csv.reader(file)
+csv_file = open('./company_parameters.csv', 'r')
+reader = csv.reader(csv_file)
 
 for row in reader:
-	if company_name == row[0]:
-		seq_length = int(row[1])
-		target_length = int(row[2])
+	if cur_ticker == row[0]:
+		company_name = row[1]
+		seq_length = int(row[2])
+		target_length = int(row[3])
+		indicator_arr = row[4].split(' ')
 		break
 		
-file.close()
+csv_file.close()
 
-print(f'\nCompany: {company_name}')
+print(f'\ncompany_name = {company_name}')
+print(f'cur_ticker = {cur_ticker}')
 print(f'seq_length = {seq_length}')
-print(f'target_length = {target_length}\n')
+print(f'target_length = {target_length}')
+print(f'indicator_arr = {indicator_arr}\n')
 
-stock_data = get_stock_stats(cur_ticker, target_length)
-get_stock_visual(stock_data, company_name)
+stock_data, cur_ticker, indicator_arr = get_stock_stats(cur_ticker, target_length, indicator_arr)
+get_stock_visual(stock_data, company_name, indicator_arr)
 
 testing_data = sort_data(stock_data, target_length)
 x_test, y_test = preprocess_stock_data(testing_data, seq_length)
 
-model = load_model(f'./models/LSTM_{company_name}.model')
+model = load_model(f'./models/LSTM_{cur_ticker}.model')
 print('\nProcessing...')
 model.evaluate(x_test, y_test)
