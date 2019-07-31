@@ -18,9 +18,9 @@ The `current_text.txt` file, although empty, is needed by many of the modules in
 * pandas_datareader
 * collections
 * stockstats
-* textblob
 * selenium
 * datetime
+* textblob
 * sklearn
 * random
 * pandas
@@ -50,7 +50,6 @@ The `current_text.txt` file, although empty, is needed by many of the modules in
 | `getCompanyPrediction.py` | Uses a company's model from the `models` folder to try and predict whether the price of a particular company's stock will rise or fall `target_length` days from code execution. Make sure that you enter a `cur_ticker` that matches an existing model (Ex. for `cur_ticker=KO`: `LSTM_KO.model`). |
 | `testCompanyModel.py` | Uses a company's model from the `models` folder to validate a particular company's most recent 5% of stock data. Make sure that you enter a `cur_ticker` that matches an existing model (Ex. for `cur_ticker=KO`: `LSTM_KO.model`). |
 | `writeSentimentsToCSV.py` | Web-scrapes the current sentiment of your chosen companies and saves each company's current sentiment it its own CSV file (0=Bad, 1=Good). |
-</br>
 </br>
 
 If you want to check how the losses and accuracies of all of the companies progressed over each epoch, type `tensorboard --logdir=logs` in your terminal while in the `stockPredictionRepo` directory. This doesn't require any previous code executed in the terminal or anything, you can do it straight from opening the terminal and entering `stockPredictionRepo`.</br>

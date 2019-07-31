@@ -20,28 +20,33 @@ cur_ticker = input('Enter the NASDAQ/NYSE ticker of your company (ex. for Coca-C
 csv_file = open('./company_parameters.csv', 'r')
 reader = csv.reader(csv_file)
 
+found_company = False
 for row in reader:
 	if cur_ticker == row[0]:
 		company_name = row[1]
 		seq_length = int(row[2])
 		target_length = int(row[3])
 		indicator_arr = row[4].split(' ')
+		found_company = True
 		break
 		
 csv_file.close()
 
-print(f'\ncompany_name = {company_name}')
-print(f'cur_ticker = {cur_ticker}')
-print(f'seq_length = {seq_length}')
-print(f'target_length = {target_length}')
-print(f'indicator_arr = {indicator_arr}\n')
+if found_company == True:
+	print(f'\ncur_ticker = {cur_ticker}')
+	print(f'company_name = {company_name}')
+	print(f'seq_length = {seq_length}')
+	print(f'target_length = {target_length}')
+	print(f'indicator_arr = {indicator_arr}\n')
 
-stock_data, cur_ticker, indicator_arr = get_stock_stats(cur_ticker, target_length, indicator_arr)
-get_stock_visual(stock_data, company_name, indicator_arr)
+	stock_data, cur_ticker, indicator_arr = get_stock_stats(cur_ticker, target_length, indicator_arr)
+	get_stock_visual(stock_data, company_name, indicator_arr)
 
-testing_data = sort_data(stock_data, target_length)
-x_test, y_test = preprocess_stock_data(testing_data, seq_length)
+	testing_data = sort_data(stock_data, target_length)
+	x_test, y_test = preprocess_stock_data(testing_data, seq_length)
 
-model = load_model(f'./models/LSTM_{cur_ticker}.model')
-print('\nProcessing...')
-model.evaluate(x_test, y_test)
+	model = load_model(f'./models/LSTM_{cur_ticker}.model')
+	print('\nProcessing...')
+	model.evaluate(x_test, y_test)
+else:
+	print(f'No model found for ticker: {cur_ticker}. Please restart this file and try again.')

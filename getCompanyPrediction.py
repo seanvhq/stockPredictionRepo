@@ -50,30 +50,35 @@ cur_ticker = input('Enter the NASDAQ/NYSE ticker of your company (ex. for Coca-C
 csv_file = open('./company_parameters.csv', 'r')
 reader = csv.reader(csv_file)
 
+found_company = False
 for row in reader:
 	if cur_ticker == row[0]:
 		company_name = row[1]
 		seq_length = int(row[2])
 		target_length = int(row[3])
 		indicator_arr = row[4].split(' ')
+		found_company = True
 		break
 		
 csv_file.close()
 
-print(f'\ncompany_name = {company_name}')
-print(f'cur_ticker = {cur_ticker}')
-print(f'seq_length = {seq_length}')
-print(f'target_length = {target_length}')
-print(f'indicator_arr = {indicator_arr}\n')
+if found_company == True:
+	print(f'\ncur_ticker = {cur_ticker}')
+	print(f'company_name = {company_name}')
+	print(f'seq_length = {seq_length}')
+	print(f'target_length = {target_length}')
+	print(f'indicator_arr = {indicator_arr}\n')
 
-stock_data, cur_ticker, indicator_arr = get_stock_stats(cur_ticker, target_length, indicator_arr)
-get_stock_visual(stock_data, company_name, indicator_arr)
+	stock_data, cur_ticker, indicator_arr = get_stock_stats(cur_ticker, target_length, indicator_arr)
+	get_stock_visual(stock_data, company_name, indicator_arr)
 
-testing_data = sort_data(stock_data, target_length)
-x = preprocess_data(testing_data, seq_length)
+	testing_data = sort_data(stock_data, target_length)
+	x = preprocess_data(testing_data, seq_length)
 
-model = load_model(f'./models/LSTM_{cur_ticker}.model')
-print('\nProcessing...')
-predictions = model.predict([x])
-print(f'\n\nGiven the last {seq_length} days of data, chances are that, in {target_length} days,\
- the stock price will {action_dict.get(np.argmax(predictions[-1]))}.\n')
+	model = load_model(f'./models/LSTM_{cur_ticker}.model')
+	print('\nProcessing...')
+	predictions = model.predict([x])
+	cur_prediction = action_dict.get(np.argmax(predictions[-1]))
+	print(f'\n\nGiven the last {seq_length} days of data, chances are that, in {target_length} days, the stock price will {cur_prediction}.\n')
+else:
+	print(f'No model found for ticker: {cur_ticker}. Please restart this file and try again.')
