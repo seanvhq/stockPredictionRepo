@@ -1,15 +1,14 @@
 import numpy as np
-import csv
 from datetime import datetime as date
 from getStockStats import get_stock_stats, evaluate_price, get_stock_visual
 from makeStockRNN import sort_stock_data, preprocess_stock_data, make_stock_rnn
+import os
 
 print(f"Today's date and time:\
  {date.today().year}-{date.today().month}-{date.today().day}_{date.today().hour}:{date.today().minute}:{date.today().second}\n")
 
-company_name = input('Enter the name of your company (ex. Coca-Cola): ')
 cur_ticker = input('Enter the NASDAQ/NYSE ticker of your company (ex. for Coca-Cola: KO): ').upper()
-print(f'\nYou chose: {company_name} (NASDAQ/NYSE: {cur_ticker})\n')
+print('')
 
 print('\nEach prediction uses the last <seq_length> days of information containing each indicator from the <indicator_arr> list\
  all as reference data to predict whether the price will rise or fall in <target_length> days.\n')
@@ -70,7 +69,7 @@ for c in indicator_arr:
 print('-----------------------------------------------------------')
 
 training_data, testing_data = sort_stock_data(stock_data, target_length)
-get_stock_visual(stock_data, company_name, indicator_arr)
+get_stock_visual(stock_data, cur_ticker, indicator_arr)
 
 x_train, y_train = preprocess_stock_data(training_data, seq_length)
 x_test, y_test = preprocess_stock_data(testing_data, seq_length)
@@ -89,8 +88,6 @@ while not_num3 == True:
 
 print('')
 
-make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, cur_ticker, EPOCHS)
-
 file = open('./current_text.txt', 'w')
 for cur_ind in indicator_arr:
 	file.write(cur_ind+' ')
@@ -103,7 +100,12 @@ file.close()
 file = open('./current_text.txt', 'w')
 file.close()
 
-csv_file = open('./company_parameters.csv', 'a')
-writer = csv.writer(csv_file)
-writer.writerow([cur_ticker,company_name,seq_length,target_length,ind_string])
-csv_file.close()
+copy_no = 1
+for cur_file in os.listdir('./models'):
+	if cur_ticker in cur_file:
+		if str(seq_length) in cur_file:
+			if str(target_length) in cur_file:
+				if ind_string in cur_file:
+					copy_no += 1
+
+make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, cur_ticker, ind_string, copy_no, EPOCHS)
