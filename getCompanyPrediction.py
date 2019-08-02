@@ -113,7 +113,7 @@ for cur_file in os.listdir('./models'):
 					copy_amt += 1
 
 if copy_amt > 0:
-	copy_no = 0
+	copy_no = 1
 	if copy_amt == 1:
 		pass
 	else:
