@@ -64,7 +64,7 @@ Some of the models don't have logs; that's because I added the log functionality
 | AMZN | 75.00% |
 | F | 63.68% |
 | GOOGL | 65.62% |
-| ko | 59.11% |
+| KO | 59.11% |
 | MSFT | 60.76% |
 | NVDA | 68.24% |
 | SBUX | 91.46% |
