@@ -49,10 +49,8 @@ def get_stock_stats(cur_ticker, target_length, indicator_arr):
 
 def get_stock_visual(stock_data, cur_ticker, indicator_arr):
 	rcParams['figure.figsize'] = 15, 7
-	plt.plot(stock_data['open'], label='Open')
-	plt.plot(stock_data['close'], label='Close')
-	plt.title(cur_ticker+' Stock Data')
-	plt.legend()
+	plt.plot(stock_data['close'])
+	plt.title(cur_ticker+' Close')
 	plt.show()
 	
 	for cur_ind in indicator_arr:

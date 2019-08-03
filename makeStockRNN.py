@@ -87,7 +87,7 @@ def make_stock_rnn(x_train, y_train, x_test, y_test, seq_length, target_length, 
 	opt = tf.keras.optimizers.Adam(lr=0.001, decay=1e-6)
 	model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
-	tensorboard = TensorBoard(log_dir=f'logs/{cur_ticker}_{date.today()}')
+	tensorboard = TensorBoard(log_dir=f'./logs/LSTM_{cur_ticker}_seq:{seq_length}_target:{target_length}_ind:{ind_string}_copy:{copy_no}')
 	checkpoint = ModelCheckpoint\
     (f'./models/LSTM_{cur_ticker}_seq:{seq_length}_target:{target_length}_ind:{ind_string}_copy:{copy_no}.model', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 

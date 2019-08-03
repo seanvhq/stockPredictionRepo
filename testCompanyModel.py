@@ -1,8 +1,8 @@
-import tensorflow as tf
+import os
+from datetime import datetime as date
 from tensorflow.keras.models import load_model
 from getStockStats import get_stock_stats, get_stock_visual, evaluate_price
 from makeStockRNN import preprocess_stock_data
-import os
 
 def sort_data(df, target_length):
 	df = df[:-target_length]
@@ -15,7 +15,12 @@ def sort_data(df, target_length):
 	print(f'\n\nDone! (sort_stock_data)')
 	return testing_data
 
+print(f"Today's date and time:\
+ {date.today().year}-{date.today().month}-{date.today().day}_{date.today().hour}:{date.today().minute}:{date.today().second}\n")
+
 cur_ticker = input('Enter the NASDAQ/NYSE ticker of your company (ex. for Coca-Cola: KO): ').upper()
+print('\nEach prediction uses the last <seq_length> days of information containing each indicator from the <indicator_arr> list\
+ all as reference data to predict whether the price will rise or fall in <target_length> days.\n')
 
 not_num1 = True
 while not_num1 == True:
@@ -58,7 +63,7 @@ print('\n-----------------------------')
 print('List of indicators:')
 
 for c in indicator_arr:
-	print(c)
+	print(' - '+c)
 
 print('-----------------------------')
 
@@ -90,18 +95,22 @@ if copy_amt > 0:
 		valid_copy = False
 		while valid_copy == False:
 			try:
-				copy_no = int(input(f"There are {copy_amt} models with the same parameters in the ./models folder. Please enter the number of the copy you'd like to select: "))
+				print(f"\nThere are {copy_amt} models with the parameters you've entered in the ./models folder.")
+				copy_no = int(input("Please enter the number of the copy you'd like to select: "))
 				if copy_no > copy_amt or copy_no <= 0:
 					print(f"That number is out of range.\n")
 				else:
 					valid_copy = True
 			except:
-				print('Invalid input.\n')
+				print('Invalid input.')
 	
-	print(f'\ncur_ticker = {cur_ticker}')
+	model_name = f'LSTM_{cur_ticker}_seq:{seq_length}_target:{target_length}_ind:{ind_string}_copy:{copy_no}.model'
+	print(f'\nModel found: {model_name}\n')
+	print(f'cur_ticker = {cur_ticker}')
 	print(f'seq_length = {seq_length}')
 	print(f'target_length = {target_length}')
-	print(f'indicator_arr = {indicator_arr}\n')
+	print(f'indicator_arr = {indicator_arr}')
+	print(f'copy_no = {copy_no}\n')
 
 	stock_data, cur_ticker, indicator_arr = get_stock_stats(cur_ticker, target_length, indicator_arr)
 	get_stock_visual(stock_data, cur_ticker, indicator_arr)
@@ -109,8 +118,9 @@ if copy_amt > 0:
 	testing_data = sort_data(stock_data, target_length)
 	x_test, y_test = preprocess_stock_data(testing_data, seq_length)
 
-	model = load_model(f'./models/LSTM_{cur_ticker}_seq:{seq_length}_target:{target_length}_ind:{ind_string}_copy:{copy_no}.model')
+	model = load_model(f'./models/{model_name}')
 	print('\nProcessing...')
 	model.evaluate(x_test, y_test)
+	print('')
 else:
-	print(f'No model found for those parameters. Please restart this file and try again.')
+	print('\nNo model found for those parameters. Please restart this file and try again.\n')

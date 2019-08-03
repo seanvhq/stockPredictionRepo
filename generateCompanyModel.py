@@ -8,8 +8,6 @@ print(f"Today's date and time:\
  {date.today().year}-{date.today().month}-{date.today().day}_{date.today().hour}:{date.today().minute}:{date.today().second}\n")
 
 cur_ticker = input('Enter the NASDAQ/NYSE ticker of your company (ex. for Coca-Cola: KO): ').upper()
-print('')
-
 print('\nEach prediction uses the last <seq_length> days of information containing each indicator from the <indicator_arr> list\
  all as reference data to predict whether the price will rise or fall in <target_length> days.\n')
 
@@ -54,7 +52,7 @@ print('\n-----------------------------')
 print('Tentative list of indicators:')
 
 for c in indicator_arr:
-	print(c)
+	print(' - '+c)
 
 print('-----------------------------')
 
@@ -64,7 +62,7 @@ print('\n-----------------------------------------------------------')
 print('Final list of indicators (invalid indicators were removed):')
 
 for c in indicator_arr:
-	print(c)
+	print(' - '+c)
 
 print('-----------------------------------------------------------')
 
@@ -74,9 +72,7 @@ get_stock_visual(stock_data, cur_ticker, indicator_arr)
 x_train, y_train = preprocess_stock_data(training_data, seq_length)
 x_test, y_test = preprocess_stock_data(testing_data, seq_length)
 
-print(f'Train data: {len(x_train)}. Test data: {len(x_test)}.')
-print(f'Train sells: {y_train.count(0)}. Buys: {y_train.count(1)}.')
-print(f'Test sells: {y_test.count(0)}. Buys: {y_test.count(1)}.\n')
+print('\n')
 
 not_num3 = True
 while not_num3 == True:
