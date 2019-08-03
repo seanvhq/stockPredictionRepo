@@ -32,7 +32,7 @@ The `current_text.txt` file, although empty, is needed by many of the modules in
 ## Important Notes:
 * When creating a model for a company using `generateCompanyModel.py`, you are asked to provide the company's NASDAQ/NYSE ticker: `cur_ticker`, `seq_length`, `target_length`, and `indicator_arr`. These are written to the corresponding model's name (Ex. `LSTM_cur_ticker_seq:seq_length_target:target_length_ind:indicator_arr_copy:copy_amt.model`). The `copy_amt` simply states how many models there are with the same parameters (including itself) at the time of model generation.
 * Each prediction uses the last `seq_length` days of information containing each indicator from the `indicator_arr` list all as reference data to predict whether the price will rise or fall in `target_length` days.
-* When running either `getCompanyPrediction.py` or `testCompanyModel.py`, the `seq_length`, `target_length`, and `indicator_arr` variables must match a model in the `models` folder. If there is more than 1, you'll be asked to enter the `copy_amt` to indentify which model you want to use.
+* When running either `getCompanyPrediction.py` or `testCompanyModel.py`, the `seq_length`, `target_length`, and `indicator_arr` variables must match a model in the `models` folder. If there is more than one model with the same parameters, you'll be asked to enter the `copy_amt` to indentify which of those models you want to use.
 * All of the models in the repository, as of July 29, 2019, have `seq_length=60`, `target_length=30`, and `indicator_arr=['volume_delta', 'boll', 'macd', 'open_2_sma']` (these parameters yield the highest accuracies for whatever reason).
 * Please refer to the stockstats documentation for a list of indicators to use: https://pypi.org/project/stockstats/
 
@@ -58,17 +58,17 @@ When you're done, go back to your terminal and press `CTRL+C` to finish your vie
 Some of the models don't have logs; that's because I added the log functionality *after* generating some of the models.
 </br>
 
-| Company | Model Accuracy as of July 29, 2019 |
-| ------- | ---------------------------------- |
-| Apple | 73.67% |
-| Amazon | 75.00% |
-| Ford | 63.68% |
-| Google | 65.62% |
-| Coca-Cola | 59.11% |
-| Microsoft | 60.76% |
-| Nvidia | 68.24% |
-| Starbucks | 91.46% |
-| Tesla | 90.62% |
+| Company NASDAQ/NYSE Ticker | Model Accuracy as of July 29, 2019 |
+| -------------------------- | ---------------------------------- |
+| AAPL | 73.67% |
+| AMZN | 75.00% |
+| F | 63.68% |
+| GOOGL | 65.62% |
+| ko | 59.11% |
+| MSFT | 60.76% |
+| NVDA | 68.24% |
+| SBUX | 91.46% |
+| TSLA | 90.62% |
 | UPS | 67.72% |
 </br>
 </br>
